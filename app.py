@@ -5,6 +5,7 @@ import pandas as pd
 import torch
 import os
 import sys
+from PIL import Image
 
 # Configuración de página Streamlit
 st.set_page_config(
@@ -176,3 +177,6 @@ st.caption("""
 **Acerca de la aplicación**: Esta aplicación utiliza YOLOv5 para detección de objetos en tiempo real.
 Desarrollada con Streamlit y PyTorch.
 """)
+
+image = Image.open('Mimikyu.png')
+st.image(image, width=350)
