@@ -80,13 +80,13 @@ if model:
     
     # Ajustar parámetros del modelo
     with st.sidebar:
-        st.subheader('Configuración de detección')
+        st.subheader('Poderes de Mimikyu (Configuración)')
         model.conf = st.slider('Confianza mínima', 0.0, 1.0, 0.25, 0.01)
         model.iou = st.slider('Umbral IoU', 0.0, 1.0, 0.45, 0.01)
         st.caption(f"Confianza: {model.conf:.2f} | IoU: {model.iou:.2f}")
         
         # Opciones adicionales
-        st.subheader('Opciones avanzadas')
+        st.subheader('Poderes de Gigantamax Mimikyu (Opciones avanzadas)')
         try:
             model.agnostic = st.checkbox('NMS class-agnostic', False)
             model.multi_label = st.checkbox('Múltiples etiquetas por caja', False)
