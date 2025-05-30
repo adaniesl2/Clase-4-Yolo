@@ -9,10 +9,12 @@ from PIL import Image
 
 # Configuración de página Streamlit
 st.set_page_config(
-    page_title="Detección de Objetos en Tiempo Real",
+    page_title="Mimikyu te va a ayudar a detectar objetos en tiempo real",
     page_icon="🔍",
     layout="wide"
 )
+image = Image.open('Alakazam.png')
+st.image(image, width=350)
 
 # Función para cargar el modelo YOLOv5 de manera compatible con versiones anteriores de PyTorch
 @st.cache_resource
@@ -178,5 +180,3 @@ st.caption("""
 Desarrollada con Streamlit y PyTorch.
 """)
 
-image = Image.open('Mimikyu.png')
-st.image(image, width=350)
