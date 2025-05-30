@@ -63,10 +63,10 @@ def load_yolov5_model(model_path='yolov5s.pt'):
         return None
 
 # Título y descripción de la aplicación
-st.title("🔍 Detección de Objetos en Imágenes")
+st.title("🔍 Mimikyu te va a ayudar a detectar objetos en imágenes")
 st.markdown("""
 Esta aplicación utiliza YOLOv5 para detectar objetos en imágenes capturadas con tu cámara.
-Ajusta los parámetros en la barra lateral para personalizar la detección.
+Ajusta los parámetros en la barra lateral para ayudar a Mimikyu a mejorar la detección.
 """)
 
 # Cargar el modelo
