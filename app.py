@@ -13,8 +13,8 @@ st.set_page_config(
     page_icon="🔍",
     layout="wide"
 )
-image = Image.open('Alakazam.png')
-st.image(image, width=350)
+image = Image.open('Mimikyu.png')
+st.image(image, width=700)
 
 # Función para cargar el modelo YOLOv5 de manera compatible con versiones anteriores de PyTorch
 @st.cache_resource
